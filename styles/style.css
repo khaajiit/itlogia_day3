@@ -46,6 +46,10 @@ body {
     display: flex;
 }
 
+.menu ul li {
+    cursor: pointer;
+}
+
 .menu-item {
     margin-right: 115px;
 }
