@@ -11,6 +11,7 @@
 @font-face {
     font-family: Roboto;
     src: url("../fonts/Robotobold.ttf");
+    font-weight: bold;
 }
 
 body {
@@ -19,7 +20,7 @@ body {
 
 .header {
     border-bottom: 1px solid #E5E5E5;
-    pedding: 25px 0;
+    padding: 25px 0;
 }
 
 .container {
@@ -172,8 +173,8 @@ body {
     height: 54px;
 }
 
-.car-item-point > div:nth-child(3) {
-    color: gray;
+.car-item-point > div:nth-child(2) {
+    font-weight: bold;
 }
 
 .price {
@@ -211,6 +212,7 @@ body {
     color: #000;
     outline: none;
     margin-bottom: 15px;
+    box-sizing: border-box;
 }
 
 .price-input::placeholder {
@@ -218,7 +220,7 @@ body {
 }
 
 .price .button {
-    width: 382px;
+    width: 100%;
 }
 
 .price-image {
@@ -228,7 +230,7 @@ body {
 }
 
 .footer {
-    border-bottom: 1px solid #E5E5E5;
+    border-top: 1px solid #E5E5E5;
     padding: 25px 0;
 }
 
