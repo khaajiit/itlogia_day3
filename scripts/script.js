@@ -30,6 +30,11 @@ document.getElementById("price-action").onclick = function () {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
+    let layer = document.querySelector('.price-image');
+document.addEventListener('mousemove', (event) => {
+        layer.style.transform = 'translate3d(' + ((event.clientX * 0.3) / 8) + 'px,' + ((event.clientY * 0.3) / 8) + 'px,0px)';
+});
+
     const elem = document.querySelector("body");
     document.addEventListener('scroll', () => {
         elem.style.backgroundPositionY = 100 + (0.4 * window.pageYOffset) + 'px';
